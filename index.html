@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <title>
+	   SOCEA - Software que caracterice los estilos de aprendizaje 
+    </title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"
+      media="screen,projection" />
+    <link rel="stylesheet" type="text/css" rel="stylesheet" href="css/estilo.css">  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+				
+</head>  
+     
+<body class="font-cover" id="main">
+  <!-- MENU DE NAVEGACION --> 
+<nav class="#472C85">
+  <div class="nav-wrapper">
+    <div class="black-text row">
+      <div class="z-depth-5 black-text col s12">
+          <a href="../index.html" class="brand-logo"><h1>SOCEA</h1></a>      
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="WebContent/registro.php">Registrarse</a></li>
+          </ul>         
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="contenedor-principal">
+    <div class="banner">
+
+          <img class="z-depth-3 responsive-img" src="imagenes/aprendizaje.png" class="img-banner">
+
+
+    </div>
+  
+    <div class="white banner">
+      <div class="row">
+        <div class="bienvenida black-text col s12">
+          <h2>Conoce tu estilo de aprendizaje propio</h2>
+          <h3>Bienvenido al Software de Caracterizacion de los estilos de Aprendizaje SOCEA. </h3>
+        </div>
+      </div>
+    </div>  
+
+    <div class="row">
+      <div class="descripcion col s6">
+        <h2>Descripcion</h2>
+        <p>Para ingresar al sistema acceda con su usuario y contraseña, si no ha realizado el proceso de registro hagalo en la parte superior derecha.</p>
+        <br>
+        <p>El sistema evaluara a partir de test su mejor estelo(s) de aprendizaje otorgandole una respuesta y a su ves actividades relacionadas con su resultado.</p>
+      </div>
+      <div class="col s5">
+        <div class="login center-align">
+          <div style="margin:15px 0;">
+            <i class="large material-icons">account_circle</i>
+            <p>Inicia sesión</p>
+            <p>con tu cuenta</p>   
+          </div>
+          <form action="WebContent/servidor/login.php" method="POST">
+            <div class="input-field col s12">
+              <input id="username" name="username"  type="text" class="validate">
+              <label for="user">Usuario</label>
+            </div>   
+            <div class="input-field col s12">
+              <input id="password" name="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>  
+              <button class="btn waves-effect waves-light" type="submit" name = "iniciar" id="acceder">Entrar
+                <i class="material-icons right">send</i>
+              </button>
+          </form>            
+        </div>     
+      </div>
+  
+    </div>
+
+</div>
+
+      <footer>
+       
+        <div class="white">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <img src="./CredibanCo - Consulta de saldos_files/ico-contactanos.png" class="img-responsive"><span>Contáctanos:</span>
+          </div>
+          <div class="col-md-8 col-sm-8 numeros-contacto">
+            <div class="col-md-7 col-sm-6">
+              <p>Línea de atención a comercios Bogotá:</p>
+              <p>327 8690</p>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <p>Otras ciudades:</p>
+              <p> 01 8000 975 806 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  <script type="text/javascript"
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
